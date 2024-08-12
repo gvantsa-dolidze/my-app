@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="w-[80%] m-auto p-5 flex">
-        <Sidebar />
+      <div className="w-[80%] m-auto flex px-5">
+        <Sidebar home="Home" mission="Missions" />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
