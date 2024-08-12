@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className="w-[25%]">Sidebar</div>
   )
 }
 

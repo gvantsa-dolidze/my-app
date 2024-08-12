@@ -1,6 +1,6 @@
 const Missions = () => {
   return (
-    <div>Missions</div>
+    <div className="w-[75%]">Missions</div>
   )
 }
 
