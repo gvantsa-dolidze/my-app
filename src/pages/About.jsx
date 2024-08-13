@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <div className="w-[85%] px-5 pt-5 border-r">
+    <div className="w-[100%] px-5 pt-5 border-r">
       <h2 className="text-center p-5 font-bold text-xl">lorem ipsum</h2>
-      <div className="flex justify-center gap-10">
+      <div className="flex justify-center gap-10 flex-wrap">
         <div>
           <p className="w-96">
             <h2 className="text-center p-5 font-bold">What is Lorem Ipsum?</h2>
