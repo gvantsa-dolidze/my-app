@@ -1,12 +1,12 @@
 const About = () => {
   return (
-    <div className="w-[100%] px-5 pt-5">
+    <div className="w-[100%]">
       <h2 className="text-center p-5 font-bold text-xl">lorem ipsum</h2>
       <div className="flex justify-center gap-10 flex-wrap">
         <div>
-          <div className="w-96">
+          <div className="sm:w-96">
             <h2 className="text-center p-5 font-bold">What is Lorem Ipsum?</h2>
-            <p>
+            <p className="p-1">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -19,9 +19,9 @@ const About = () => {
               Lorem Ipsum.
             </p>
           </div>
-          <div className="w-96">
+          <div className="sm:w-96">
             <h2 className="text-center p-5 font-bold">Why do we use it?</h2>
-            <p>
+            <p className="p-1">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -36,11 +36,11 @@ const About = () => {
           </div>
         </div>
         <div>
-          <div className="w-96">
+          <div className="sm:w-96">
             <h2 className="text-center p-5 font-bold">
               Where does it come from?
             </h2>
-            <p>
+            <p className="p-1">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock, a Latin

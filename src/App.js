@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="w-[80%] m-auto flex px-5">
+      <div className="sm:w-[80%] m-auto flex px-5">
         <Sidebar home="Home" mission="Missions" />
         <Routes>
           <Route path="/" element={<HomePage />} />
