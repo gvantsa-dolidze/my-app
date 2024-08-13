@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Navbar = ({ home, contact, about, mission }) => {
   return (
-    <nav className="space-x-5">
+    <nav className="sm:space-x-5 space-x-2">
       <NavLink
         to="/"
         className={(navData) =>
