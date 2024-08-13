@@ -1,5 +1,5 @@
 import React from "react";
-const styles = {
+const Styles = {
   primary:
     "bg-blue-700 text-white px-8 py-2 rounded-full transition-all hover:bg-blue-500",
   secondary:
@@ -7,8 +7,8 @@ const styles = {
   danger: "bg-red-500 text-white px-3 py-2 rounded-md w-40 hover:bg-red-700",
   outline: "border border-gray-500 px-3 py-2 rounded-md w-40 hover:bg-gray-300",
 };
-const Button = ({ text, style }) => {
-  return <button className={styles[style]}>{text}</button>;
+const Button = ({ text, styles }) => {
+  return <button className={Styles[styles]}>{text}</button>;
 };
 
 export default Button;

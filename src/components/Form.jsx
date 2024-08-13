@@ -4,7 +4,7 @@ const Form = () => {
     <form action="submit">
         <Button 
              text='Submit'
-             style='secondary'
+             styles='secondary'
         />
     </form>
   )
