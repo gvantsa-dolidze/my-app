@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
+import { NavLink } from "react-router-dom";
 const Missions = () => {
   const [missionsData, setMissionsData] = useState([]);
   const getMissionsData = async () => {
@@ -23,20 +24,20 @@ const Missions = () => {
       {missionsData.map((missions, index) => (
         <Card key={index} >
           {
-            <a href="/">
+            <NavLink to={missions.wikipedia} target="_blank" rel="noreferrer">
               <p>
-                <span className="font-bold" >Mission Name:</span>
+                <span className="font-bold" >Mission Name: </span>
                 {missions.mission_name}
               </p>
               <p>
-                <span className="font-bold">Mission Id:</span>
+                <span className="font-bold">Mission Id: </span>
                 {missions.mission_id}
               </p>
               <p>
-                <span className="font-bold">Description:</span>
+                <span className="font-bold">Description: </span>
                 {missions.description}
               </p>
-            </a>
+            </NavLink>
           }
         </Card>
       ))}
