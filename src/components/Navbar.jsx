@@ -5,7 +5,7 @@ const Navbar = ({ home, contact, about, mission }) => {
       <NavLink
         to="/"
         className={(navData) =>
-          navData.isActive ? "text-red-600" : "text-black"
+          navData.isActive ? "text-white" : "text-black"
         }
       >
         {home}
@@ -13,7 +13,7 @@ const Navbar = ({ home, contact, about, mission }) => {
       <NavLink
         to="/contact"
         className={(navData) =>
-          navData.isActive ? "text-red-600" : "text-black"
+          navData.isActive ? "text-white" : "text-black"
         }
       >
         {contact}
@@ -21,7 +21,7 @@ const Navbar = ({ home, contact, about, mission }) => {
       <NavLink
         to="/about"
         className={(navData) =>
-          navData.isActive ? "text-red-600" : "text-black"
+          navData.isActive ? "text-white" : "text-black"
         }
       >
         {about}
@@ -29,7 +29,7 @@ const Navbar = ({ home, contact, about, mission }) => {
       <NavLink
         to="/missions"
         className={(navData) =>
-          navData.isActive ? "text-red-600" : "text-black"
+          navData.isActive ? "text-white" : "text-black"
         }
       >
         {mission}

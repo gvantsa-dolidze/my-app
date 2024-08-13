@@ -6,7 +6,7 @@ const Sidebar = ({ home, mission }) => {
         <NavLink
           to="/"
           className={(navData) =>
-            `${navData.isActive ? "bg-slate-200" : "bg-white" } py-3 border-b pl-5`
+            `${navData.isActive ? "bg-slate-200" : "bg-white" } py-3 border-b px-5`
           }
         >
           {home}
@@ -14,7 +14,7 @@ const Sidebar = ({ home, mission }) => {
         <NavLink
           to="/missions"
           className={(navData) =>
-            `${navData.isActive ? "bg-slate-200" : "bg-white"} py-3 border-b pl-5`
+            `${navData.isActive ? "bg-slate-200" : "bg-white"} py-3 border-b px-5`
           }
         >
           {mission}
