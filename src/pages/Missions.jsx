@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import Card from "../components/Card";
 const Missions = () => {
   const [missionsData, setMissionsData] = useState([]);
   const getMissionsData = async () => {
@@ -18,17 +18,30 @@ const Missions = () => {
   useEffect(() => {
     getMissionsData();
   }, []);
-  return <div className="w-[100%] px-5 pt-5">
-    
-      {missionsData.map((missions, index)=>(
-<a href="/" key={index}>
-  <h2><span>Mission Name:</span>{missions.mission_name}</h2>
-  <h2><span>Mission Id:</span>{missions.mission_id}</h2>
-  <h2><span>Description:</span>{missions.description}</h2>
-</a>
+  return (
+    <div className="w-[100%] px-5 pt-5 space-y-10">
+      {missionsData.map((missions, index) => (
+        <Card key={index} >
+          {
+            <a href="/">
+              <p>
+                <span className="font-bold" >Mission Name:</span>
+                {missions.mission_name}
+              </p>
+              <p>
+                <span className="font-bold">Mission Id:</span>
+                {missions.mission_id}
+              </p>
+              <p>
+                <span className="font-bold">Description:</span>
+                {missions.description}
+              </p>
+            </a>
+          }
+        </Card>
       ))}
-    
-  </div>;
+    </div>
+  );
 };
 
 export default Missions;

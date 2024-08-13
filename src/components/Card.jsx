@@ -1,6 +1,8 @@
-const Card = () => {
+const Card = ({children}) => {
   return (
-    <div>Card</div>
+    <div className="border border-gray-700 rounded-md p-5">
+{children}
+    </div>
   )
 }
 
