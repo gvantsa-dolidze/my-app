@@ -7,8 +7,8 @@ const Styles = {
   danger: "bg-red-500 text-white px-3 py-2 rounded-md w-40 hover:bg-red-700",
   outline: "border border-gray-700 px-3 py-2 rounded-md w-40 hover:bg-gray-300",
 };
-const Button = ({ text, styles }) => {
-  return <button className={Styles[styles]}>{text}</button>;
+const Button = ({ text, styles, onclick }) => {
+  return <button onClick={onclick} className={Styles[styles]} >{text}</button>;
 };
 
 export default Button;
